@@ -14,3 +14,6 @@ The ATM needs to have funds
 
 - Need to have funds: done
 - User can make withdrawal = withdraw method: done
+
+As an ATM operator            
+In order for the right person to make a withdrawal I want each person to have an separate account
