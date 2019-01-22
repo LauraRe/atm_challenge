@@ -17,3 +17,7 @@ The ATM needs to have funds
 
 As an ATM operator            
 In order for the right person to make a withdrawal I want each person to have an separate account
+
+As an ATM operator
+In order for our customers to withdraw funds
+I need make sure that we only allow withdrawals if there are funds available
