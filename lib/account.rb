@@ -4,7 +4,7 @@ class Account
     
     def initialize(attrs = {})
         @pin_code = rand(1000..9999)
-        @balance = balance
+        @balance = 0
         @exp_date = Date.today.next_year(STANDARD_VALIDITY_YRS).strftime('%m/%Y')
         @account_status = :active
         set_owner(attrs[:owner])
@@ -22,7 +22,9 @@ class Account
         def missing_owner
             raise "An Account owner is required"
         end
+
+    end 
     
 
-end
+
 
