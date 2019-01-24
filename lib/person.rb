@@ -1,12 +1,18 @@
+require './lib/account'
+require 'date'
+
 class Person
     attr_accessor :name, :cash, :account
 
     def initialize(attrs = {})
         @name = set_name(attrs[:name])
         @cash = 0
-        @account = account
+        @account = nil
     end
 
+    def create_account
+        @account = Account.new(owner: self)
+    end
     
     def set_name(name)
         if name == nil then
@@ -15,6 +21,5 @@ class Person
             name
         end
     end
-
 
 end
