@@ -55,4 +55,8 @@ class Person
         raise RuntimeError, 'No account present'
     end
 
+    def missing_atm
+        raise RuntimeError, 'An ATM is required'
+    end
+
 end
